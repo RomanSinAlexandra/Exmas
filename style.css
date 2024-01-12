@@ -1,0 +1,23 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-image: url("./silentvoice01.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0; 
+    height: 100vh;
+}
+
+.result-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.is-flex {
+    display: flex;
+}
+
+.is-justify-content-center {
+    justify-content: center;
+}

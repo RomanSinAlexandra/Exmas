@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма з елементами</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="section">
+    <div class="container has-text-centered">
+        <form id="myForm">
+            <div class="field">
+                <label for="birthdate" class="label">Дата народження:</label>
+                <div class="control">
+                    <input class="input" type="date" id="birthdate" name="birthdate" max="2024-01-12" required onchange="updateAgeDisplay()">
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="rangeInput" class="label">Вік:</label>
+                <div class="control">
+                    <input class="input" type="text" id="ageDisplay" readonly>
+                    <input class="input" type="range" id="rangeInput" name="rangeInput" min="0" max="150" value="0">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-primary" onclick="submitForm()">Відправити</button>
+                    <audio id="weatherAudio">
+                        <source src="./Rickroll.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </form>
+        <div id="resultContainer" class="result-container is-flex is-justify-content-center"></div>
+        <div id="zodiacContainer"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</section>
+</body>
+</html>
